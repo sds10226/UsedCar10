@@ -1,0 +1,197 @@
+.dealer-signup-top {
+    height: 70px;
+    background: #EE5A24;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.dealer-signup-left-menu {
+    position: relative;
+    height: 70px;
+    /* 왼쪽에 부유하는 블록 박스를 생성 */
+    float: left;
+    
+}
+
+.dealer-signup-left-menu > span {
+    font-weight: bold;
+    font-size: 230%;
+    border-bottom: 2px solid #fff;
+    color: white;
+    line-height: 70px;
+}
+
+.dealer-signup-left-menu > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: .4s;
+}
+
+.dealer-signup-right-menu {
+    /* 오른쪽에 부유하는 블록 박스를 생성 */
+    float: right;
+}
+
+.dealer-signup-right-menu > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: .4s;
+    font-size: 80%;
+    vertical-align: bottom;
+}
+
+/* 이렇게 두 개의 클래스를 한 번에 모아서 처리 가능 */
+.dealer-signup-left-menu > a:hover, 
+.dealer-signup-right-menu > a:hover {
+    color: rgb(236, 180, 159);
+    text-decoration: none;
+}
+
+.dealer-signup-menu {
+    border: 0px solid #EE5A24;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#dealer-signup-container {
+    /* border: 1px solid red; */
+    
+    height: auto;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* table 옵션 */
+#default-info-table,
+#company-info-table,
+#dealer-info-table {
+    border-top: 2px solid gray;
+
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+/* 테이블 왼쪽열 setting */
+#default-info-table tr th,
+#company-info-table tr th,
+#dealer-info-table tr th {
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(250, 250, 250);
+    padding-left: 15px;
+    text-align: left;
+    width: 20%;
+    height: 40px;
+    font-weight: 500;
+    
+    
+}
+/* 테이블 안의 * 색깔 조절 */
+#default-info-table tr th em ,
+#company-info-table tr th em,
+#dealer-info-table tr th em {
+    color: #EE5A24;
+    font-weight: bold;
+}
+
+/* 테이블 오른쪽열 setting */
+#default-info-table tr td,
+#company-info-table tr td,
+#dealer-info-table tr td {
+    border-bottom: 1px solid lightgray;
+    padding-left: 15px;
+}
+
+/* 생년월일 select box setting */
+.birth-set select{
+    width: 70px;
+    height: 24px;
+}
+
+/* id 중복확인 버튼 setting */
+.btn_idcheck,
+.btn_adress {
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: 80%;
+    padding: 3px;
+    color: black;
+    background-color: lightgray;
+}
+
+/* 비밀번호 찾기 질문 setting */
+.select-pass-q {
+    width: 200px;
+    height: 24px;
+}
+
+/* 집 전화번호 setting  */
+#phone1,
+#tel1,
+#company_phone1,
+#company_fax1 {
+    width: 4em;
+    height: 24px;
+}
+#phone2, 
+#phone3,
+#tel2,
+#tel3,
+#company_phone2,
+#company_phone3,
+#company_fax2,
+#company_fax3 {
+    width: 4em;
+}
+
+/* email 입력 setting */
+#email3 {
+    height: 24px;
+}
+
+.union {
+    height: 24px;
+}
+
+/* 프로필 이미지 업로드 관련 */
+.profile {
+    border: 1px solid lightgray;
+}
+.profile-img {
+    width: 100%;
+}
+.img-first,
+.img-second {
+    float: left;
+}
+.img-second {
+    padding-left: 15px;
+}
+
+/* 자기소개 textarea setting */
+.intro {
+    width: 100%;
+}
+
+/* submit 버튼 setting */
+.submit_btn {
+    border: 1px solid #EE5A24;
+    border-radius: 5px;
+    background-color: #EE5A24;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* submit 버튼 담아서 화면 가운데로 위치시키기 위함... ㅠㅠ */
+.contain_sub_btn {
+    width: 92px;
+    height: 42px;
+    margin: 0 auto;
+}

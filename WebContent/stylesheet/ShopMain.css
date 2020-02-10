@@ -1,0 +1,104 @@
+#main-container {	
+	border: none;
+	width: 1200px;
+	max-width: none !important;
+	height: 550px;
+}
+
+.main-searchTool {
+    border: 2px solid black;
+    width: 1000px;
+    height: 300px;
+    
+    /* 테두리에 패딩을 줘서 안의 내용물이 박스에 너무 딱 안 붙게 함  */
+    padding: 15px 15px;
+
+    /* 화면 중앙 위치 */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-insideTitle {
+    border-bottom: 2px solid #EE5A24;
+}
+
+/* 중앙에 제조사, 모델, 세부모델로 검색하는 컨트롤 꾸미기 */
+.main-search_control {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.main-company_name,
+.main-model,
+.main-oil_type,
+.main-submit_btn {
+    height: 3.6em;
+    float: left;
+    width: 25%;
+    font-size: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.main-company_name {
+    border-style: solid solid solid solid;
+    border-width: 2px 0px 2px 2px;
+    border-color: #EE5A24 #EE5A24 #EE5A24 #EE5A24;
+}
+.main-model {
+    border-style: solid solid solid solid;
+    border-width: 2px 0px 2px 1px;
+    border-color: #EE5A24 #EE5A24 #EE5A24 #bdc3c7;
+}
+.main-oil_type {
+    border-style: solid solid solid solid;
+    border-width: 2px 0px 2px 1px;
+    border-color: #EE5A24 #EE5A24 #EE5A24 #bdc3c7;
+}
+.main-submit_btn {
+    border: none;
+    height: 54px;
+}
+.main-submit_btn {
+    background: #EE5A24;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    transition: .4s linear;
+}
+.main-submit_btn:hover {
+    background-color: #EA2027;
+    font-size: 120%;
+}
+
+/* 드롭다운에 마우스 가져다대면 주황색+볼트체로 변경  */
+.main-company_name:hover{
+    color: #EA2027;
+    font-weight: bold;
+}
+.main-company_name option{
+    color: black;
+}
+.main-model:hover{
+    color: #EA2027;
+    font-weight: bold;
+}
+.main-model option{
+    color: black;
+}
+.main-oil_type:hover{
+    color: #EA2027;
+    font-weight: bold;
+}
+.main-oil_type option{
+    color: black;
+}
+
+
+#main-footer {
+	border: none;
+	width: 100%;
+	height: 300px;
+}

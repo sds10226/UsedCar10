@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet/Login.css" type="text/css" />
+    <title>로그인</title>
+    <script>
+    	function init() {
+			var id_box = document.getElementById('id');
+			var pw_box = document.getElementById('passwd');
+			
+			id_box.value = '';
+			pw_box.value = '';
+		}
+    </script>
+</head>
+
+<body onload="init()">
+
+    <form action="connect_process/LoginPro.jsp" class="login-form" name="loginForm" method="POST">
+        <h1>Login</h1>
+
+		<!-- ID 입력 -->
+        <div class="txtb">
+            <input type="text" name="id" class="id" id="id" value="">
+            <span data-placeholder="Username"></span>
+        </div>
+
+		<!-- PW 입력 -->
+        <div class="txtb">
+            <input type="password" name="passwd" class="passwd" id="passwd" value="">
+            <span data-placeholder="Password"></span>
+        </div>
+	
+		<!-- Login 버튼 -->	
+        <input type="submit" class="logbtn" value="Login">
+        
+        <div class="search-text">
+            <span class="search-id"><a href="javascript:searchId()">아이디 찾기</a></span> |
+            <span class="search-passwd"><a href="javascript:searchPasswd()">비밀번호 찾기</a></span>
+        </div>
+
+        <div class="bottom-text">
+            	아직 회원이 아니신가요? <span class="signup-btn" onclick="signUp_next()">회원가입</span>
+        </div>
+    </form>
+
+    <script>
+        $(".txtb input").on('focus', function() {
+            $(this).addClass('focus');
+        });
+
+        $(".txtb input").on('blur', function() {
+            if($(this).val() == "")
+            $(this).removeClass('focus');
+        });
+
+        // 회원가입 버튼을 누르면 자식 페이지인 로그인 창을 닫고 부모페이지를 signup-select페이지로 바꾼다.
+        function signUp_next() {
+            window.opener.top.location.href="../sign_up/signup-select.html";
+	        window.close();
+        }
+
+        // 아이디 찾기 
+        function searchId() {
+            window.opener.top.location.href="searchId.jsp";
+	        window.close();
+        }
+
+        // 비밀번호 찾기
+        function searchPasswd() {
+            window.opener.top.location.href="searchPasswd.jsp";
+	        window.close();
+        }
+    </script>
+</body>
+
+</html>

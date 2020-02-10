@@ -1,0 +1,56 @@
+#header-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#header-top {
+    height: 70px;
+    background: #EE5A24;
+    padding: 0 20px;
+    color: #fff;
+    
+}
+
+.header-left-menu {
+    position: relative;
+    height: 70px;
+    /* 왼쪽에 부유하는 블록 박스를 생성 */
+    float: left;
+}
+
+.header-left-menu span {
+    font-weight: bold;
+    color: white;
+    font-size: 230%;
+    border-bottom: 2px solid #fff;
+    line-height: 70px;
+}
+
+.header-left-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: .4s;
+}
+
+.header-right-menu {
+    /* 오른쪽에 부유하는 블록 박스를 생성 */
+    float: right;
+    text-align: right;
+    font-size: 80%;
+    line-height: 70px;
+}
+
+.header-right-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: .4s;
+}
+
+/* 이렇게 두 개의 클래스를 한 번에 모아서 처리 가능 */
+.header-left-menu a:hover, 
+.header-right-menu a:hover {
+    color: rgb(236, 180, 159);
+}
+

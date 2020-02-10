@@ -1,0 +1,158 @@
+.select-top {
+    height: 70px;
+    background: #EE5A24;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.select-left-menu {
+    position: relative;
+    height: 70px;
+    /* 왼쪽에 부유하는 블록 박스를 생성 */
+    float: left;
+    
+}
+
+.select-left-menu > span {
+    font-weight: bold;
+    font-size: 230%;
+    border-bottom: 2px solid #fff;
+    color: white;
+    line-height: 70px;
+}
+
+.select-left-menu > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: .4s;
+}
+
+.select-right-menu {
+    /* 오른쪽에 부유하는 블록 박스를 생성 */
+    float: right;
+}
+
+.select-right-menu > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: .4s;
+    font-size: 80%;
+    vertical-align: bottom;
+}
+
+/* 이렇게 두 개의 클래스를 한 번에 모아서 처리 가능 */
+.select-left-menu > a:hover, 
+.select-right-menu > a:hover {
+    color: rgb(236, 180, 159);
+    text-decoration: none;
+}
+
+.select-menu {
+    border: 0px solid #EE5A24;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#select-container {
+    margin: 1px solid red;
+    height: auto;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.select-container-title {
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 1px 3px 3px #EE5A24;
+    color: #EE5A24;
+    font-size: 200%;
+}
+.select-container-title span {
+    color: #EE5A24;
+}
+
+/* 회원가입 container 안의 컨텐츠 */
+/* 개인회원, 딜러회원 가입 카드 생성 */
+#select-SignUp-module {
+    margin: 0 auto;
+}
+
+#select-ho-gang,
+#select-dealer {
+    border: 2px solid #EE5A24;;
+    border-radius: 15px ;
+    width: 310px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.select-mini-title,
+.select-mini-title {
+    font-size: 120%;
+    color: #2f3542;
+    text-shadow: 1px 1px 1px #57606f;
+}
+.select-mini-title span {
+    color: black;
+    text-shadow: 1px 1px 1px #57606f;
+    font-weight: 1000;
+}
+.select-mini-info {
+    font-size: 80%;
+    font-weight: 1000;
+    color: #57606f;
+}
+.select-mini-content {
+    font-size: 80%;
+    font-weight: 1000;
+    color: #57606f;
+}
+
+.select-hogang-signup-btn,
+.select-dealer-signup-btn {
+    background: #EE5A24;
+    border-radius: 10px;
+    display: block;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: .4s;
+}
+.select-hogang-signup-btn:hover,
+.select-dealer-signup-btn:hover {
+    font-weight: 800;
+    font-size: 102%;
+}
+
+.select-hogang-signup-btn {
+    margin-top: 80px;
+}
+.select-dealer-signup-btn {
+    margin-top: 60px;
+}
+
+
+/* 국산의 회원이 되면? 컨텐츠 생성 */
+#select-if-signup {
+    border: 2px solid gray;
+    width: 900px;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+.select-if-signup-frame {
+    border-bottom: 2px solid gray;
+    height: 100px;
+    width: 160px;
+    display: block;
+    padding: 15px;
+} 

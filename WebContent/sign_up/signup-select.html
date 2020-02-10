@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+<!-- 스타일 링크 -->
+<link rel="stylesheet" href="../stylesheet/footer.css">
+<link rel="stylesheet" href="../stylesheet/signup-select.css">
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<title>회 원 가 입</title>
+</head>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#footer").load("../module/footer.html")   
+    });
+</script>  
+
+<style>
+    * {
+        /* 모두를 선택 */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'montserrat', sans-serif;
+    }
+</style>
+
+<body>
+    <div class="select-top">
+        <div class="select-menu">
+        <!-- float: left; -->
+        <div class="select-left-menu">
+            <span>KOOK SAN</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <a href="http://localhost:8888/UsedCar10/sign_up/signup-select.html">회원가입</a>
+        </div>
+
+        <div class="select-right-menu">
+            <!-- float: right; -->
+            <br>
+            <a href="../ShopMain.jsp"><i class="fas fa-home" style="color: white;"></i> HOME</a>
+        </div>
+        </div>
+    </div>
+        
+    <div id="select-container">
+            <p class="select-container-title">어서오세요! &nbsp;    
+                <span style="font-weight: 1000;">KOOK SAN</span> 중고차입니다.</p>
+
+            <br>
+            <hr>
+            <br>
+
+            <i class="fas fa-check-square" style="color: #EE5A24;"></i> 회원의 종류를 선택해주세요.
+            <p style="font-size: 80%; color: gray;"> 고객님께서 해당하시는 회원의 종류를 선택해 주세요. <br>
+            회원종류에 따라 가입절차에 차이가 있으니 반드시 본인이 해당하는 경우를 선택해 주시기 바랍니다.</p>
+
+            <br>
+
+            <!-- 회원가입 카드 생성 -->
+            <table id="select-SignUp-module">
+                <tr>
+                    <td>
+                        <div id="select-ho-gang">
+                            <p class="select-mini-title"><span>개인</span>회원</p>
+                            <br>
+                            <p class="select-mini-info">만 14세이상의 개인으로<br>
+                                차량을 팔거나 사려는 회원</p>
+                            <hr>
+                            <p class="select-mini-content">
+                                본인 명의로 소유한지 6개월이 지난 차량을<br>
+                                 1년에 4대까지 광고하여 판매할 수 있습니다.<br>
+                                <span style="font-size: 90%;">(동시에 2대 이상 등록 불가)</span>
+                            </p>
+
+                            <a href="signup-terms-customer.html" class="select-hogang-signup-btn">가입하기</a>
+                        </div>
+                    </td>
+
+                    <td style="border-left: 30px solid white;"></td>
+
+                    <td>
+                        <div id="select-dealer">
+                            <p class="select-mini-title"><span>딜러</span>회원</p>
+                            <br>
+                            <p class="select-mini-info">차량을 전문적으로 사거나 판매하는<br>
+                                매매상사 딜러 회원</p>
+                            <hr>
+                            <p class="select-mini-content">
+                                    자동차관리법 제2조 제7항에 규정 된 '자동차<br>
+                                    매매업'을 영위하는 사업자 회원으로 자동차<br> 
+                                    관리법 시행규칙 제123조에 규정된 매매사원도 자동차 매매사업자로 간주합니다.
+                            </p>
+
+                            <a href="signup-terms-dealer.html" class="select-dealer-signup-btn">가입하기</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <i class="fas fa-check-square" style="color: #EE5A24;"></i> Kook San의 회원이 되면?-이건 나중에 고민해보자
+            
+            <table id="select-if-signup">
+                <tr>
+                    <!-- 테이블 사이간격을 위한 안보이는 td -->
+                    <td>
+                        <p style="border: 1px solid white; width: 35px;"></p>
+                    </td>
+                    <!--  -->
+
+                    <td>
+                        <div class="select-if-signup-frame">
+                            <div class="select-if-signup-title">차량검색</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="select-if-signup-frame">
+                            <div class="select-if-signup-title">내차팔기</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="select-if-signup-frame">
+                            <div class="select-if-signup-title">매매지원</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="select-if-signup-frame">
+                            <div class="select-if-signup-title">미디어</div>    
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+    </div>
+
+    <hr>
+     <!-- footer공간만 잡아놓음 -->
+     <div id="footer">
+    </div>
+</body>
+
+</html>
