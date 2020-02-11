@@ -11,6 +11,7 @@
 3. MySQL
 4. Eclipse
 5. Apatche Tomcat
+6. Browser : Chrome
 
 #### 사용 주요기술
 1. JAVA
